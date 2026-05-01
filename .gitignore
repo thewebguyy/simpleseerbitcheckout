@@ -1,0 +1,24 @@
+# Environment
+.env
+
+# Uploads (never commit user data)
+storage/uploads/
+
+# Logs
+storage/logs/
+
+# Vendor (if Composer is introduced)
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Build artifacts
+public/assets/css/*.min.css
+public/assets/js/*.min.js

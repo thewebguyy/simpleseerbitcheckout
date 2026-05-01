@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeerBit Simple Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SeerBit Simple Checkout</h1>
+    <form id="checkout-form" class="checkout-form" method="POST" action="checkout.php">
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount" placeholder="Enter the amount" required>
+      
+      <label for="currency">Currency:</label>
+      <input type="text" id="currency" name="currency" placeholder="Enter the currency" required>
+
+      <label for="payment-method">Payment Method:</label>
+      <select id="payment-method" name="payment-method">
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">Bank Transfer</option>
+      </select>
+
+      <label for="billing-address">Billing Address:</label>
+      <input type="text" id="billing-address" name="billing-address" placeholder="Enter the billing address">
+
+      <label for="shipping-address">Shipping Address:</label>
+      <input type="text" id="shipping-address" name="shipping-address" placeholder="Enter the shipping address">
+
+      <button type="submit" class="button">Checkout</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
